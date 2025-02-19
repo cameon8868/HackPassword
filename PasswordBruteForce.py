@@ -20,4 +20,4 @@ def BruteForce(n):
             result = a
             if result == n:
                 break
-    return result
+    return result, datetime.now() - start
