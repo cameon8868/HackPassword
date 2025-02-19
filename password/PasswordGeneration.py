@@ -7,5 +7,3 @@ def Generation():
         alf = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
         res += alf[randrange(1, len(alf))]
     return res
-
-print(Generation())
