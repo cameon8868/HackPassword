@@ -20,7 +20,7 @@ def show_message():
     
 
 root = Tk()
-root.title('PasswordHack(YanaSola)')
+root.title('HackPassword(YanaSola)')
 root.geometry('400x300')
 	
 st = ScrolledText(root, width=50,  height=10)
