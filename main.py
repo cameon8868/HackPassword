@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import * 
 from tkinter.scrolledtext import ScrolledText
 from PasswordBruteForce import *
 from PasswordGeneration import *
@@ -21,6 +21,8 @@ def show_message():
 
 root = Tk()
 root.title('HackPassword(YanaSola)')
+icon = PhotoImage(file = "iconYana.png")
+root.iconphoto(False, icon)
 root.geometry('400x300')
 	
 st = ScrolledText(root, width=50,  height=10)
