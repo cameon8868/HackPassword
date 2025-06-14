@@ -24,6 +24,12 @@ root.title('HackPassword(YanaSola)')
 icon = PhotoImage(file = "iconYana.png")
 root.iconphoto(False, icon)
 root.geometry('400x300')
+
+def on_modified(event):
+    label["text"]=editor.selection_get()
+
+editor = Text(height=8)
+editor.bind("<<Selection>>", on_modified)
 	
 st = ScrolledText(root, width=50,  height=10)
 st.pack(fill=BOTH, side=LEFT, expand=True)
