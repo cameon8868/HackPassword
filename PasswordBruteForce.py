@@ -2,7 +2,7 @@ import time
 from datetime import datetime 
 from itertools import *
 
-
+n = input()
 
 def BruteForce(n):
     n = str(n)
@@ -21,3 +21,4 @@ def BruteForce(n):
             if result == n:
                 break
     return result, datetime.now() - start
+
