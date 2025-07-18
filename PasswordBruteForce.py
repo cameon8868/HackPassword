@@ -1,8 +1,7 @@
 import time
-from datetime import datetime 
+from datetime import datetime, timedelta 
 from itertools import *
 
-n = input()
 
 def BruteForce(n):
     n = str(n)
@@ -21,6 +20,4 @@ def BruteForce(n):
             if result == n:
                 break
             
-    return result, datetime.now() - start
-
-print(BruteForce(n))
+    return datetime.now() - start

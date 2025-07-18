@@ -59,7 +59,6 @@ string bruteForce(const string &n) {
 
 int main() {
     string input;
-    cout << "Введите пароль: ";
     cin >> input;
 
     string result = bruteForce(input);
