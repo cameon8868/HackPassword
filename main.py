@@ -1,7 +1,7 @@
 from tkinter import * 
 from tkinter.scrolledtext import ScrolledText
 from PasswordGeneration import *
-from PasswordBruteForce import *
+from PBF import *
 import ctypes
 
 f = ctypes.CDLL('./libBF.so', winmode=0)
