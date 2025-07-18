@@ -20,5 +20,7 @@ def BruteForce(n):
             result = a
             if result == n:
                 break
+            
     return result, datetime.now() - start
 
+print(BruteForce(n))
