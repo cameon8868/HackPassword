@@ -1,6 +1,6 @@
 from tkinter import * 
 from tkinter.scrolledtext import ScrolledText
-from PasswordGeneration.PasswordGeneration import *
+from PasswordGeneration.PG import *
 from BruteForce.PBF import *
 import ctypes
 
