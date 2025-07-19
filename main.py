@@ -1,12 +1,12 @@
 from tkinter import * 
 from tkinter.scrolledtext import ScrolledText
-from PasswordGeneration import *
-from PBF import *
+from PasswordGeneration.PasswordGeneration import *
+from BruteForce.PBF import *
 import ctypes
 
-f = ctypes.CDLL('./libBF.so', winmode=0)
-f.print_string.argtypes = [ctypes.c_char_p]
-f.print_string.restype = ctypes.c_double
+lib = ctypes.CDLL('./BruteForce/libBF.so', winmode=0)
+lib.print_string.argtypes = [ctypes.c_char_p]
+lib.print_string.restype = ctypes.c_double
 a = []
 
 def show_message():
@@ -24,7 +24,7 @@ def show_message():
 def show_message2():
     label['text'] = 'Введите заметку'
     if entry.get() != '': 
-        a.append(f'взломан за ' + f'{f.print_string(entry.get().encode('utf-8'))}' + f' - {entry.get()}')
+        a.append(f'взломан за ' + f'{lib.print_string(entry.get().encode('utf-8'))} секунд' + f' - {entry.get()}')
         res = ''
         for i in a:
             res += '' + i + '\n'
